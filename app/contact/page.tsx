@@ -1,5 +1,4 @@
-
-export const Contact = () => {
+const Contact = () => {
   return <div>page</div>;
 };
 

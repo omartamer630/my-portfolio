@@ -2,15 +2,19 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
 import MobileNav from "@/components/MobileNav";
+import { FaAnkh } from "react-icons/fa6";
 
 const Header = () => {
   return (
     <header className=" py-8 xl:py-12 text-white ">
       <div className="container flex justify-between items-center mx-auto">
-        <Link href="/">
+        <Link href="/" className="">
           {/* Logo */}
-          <h1 className="text-4xl font-semibold">
-            Ali<span className="text-accent">.</span>
+          <h1 className="flex text-4xl font-semibold items-center gap-1">
+            Ali
+            <span className="text-accent text-3xl ">
+              <FaAnkh />
+            </span>
           </h1>
         </Link>
         {/* desktop nav */}

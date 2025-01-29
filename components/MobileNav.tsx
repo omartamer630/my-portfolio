@@ -10,6 +10,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { links } from "@/constants/nav";
+import { personal } from "@/data/index";
+import { FaAnkh } from "react-icons/fa6";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -22,8 +24,11 @@ const MobileNav = () => {
         <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
-            <h1 className="text-3xl font-semibold">
-              Ali<span className="text-accent">.</span>
+            <h1 className="flex items-center text-3xl font-semibold gap-1">
+              {personal.firstName}
+              <span className="text-accent text-3xl">
+                <FaAnkh />
+              </span>
             </h1>
           </Link>
         </div>
