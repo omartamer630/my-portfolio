@@ -114,6 +114,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setData({ ...data, firstName: e.target.value })
                   }
+                  value={data.firstName}
                 />
                 <Input
                   type="text"
@@ -123,6 +124,7 @@ const Contact = () => {
                   onChange={(e) =>
                     setData({ ...data, lastName: e.target.value })
                   }
+                  value={data.lastName}
                 />
                 <Input
                   type="email"
@@ -130,6 +132,7 @@ const Contact = () => {
                   className=""
                   required={true}
                   onChange={(e) => setData({ ...data, email: e.target.value })}
+                  value={data.email}
                 />
                 <Input
                   type="tel"
@@ -137,11 +140,13 @@ const Contact = () => {
                   className=""
                   required={true}
                   onChange={(e) => setData({ ...data, phone: e.target.value })}
+                  value={data.phone}
                 />
               </div>
               <Select
                 required={true}
                 onValueChange={(e) => setData({ ...data, service: e })}
+                value={data.service}
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service"></SelectValue>
@@ -161,6 +166,7 @@ const Contact = () => {
                 className="h-[200px] "
                 placeholder="Type your message here."
                 onChange={(e) => setData({ ...data, message: e.target.value })}
+                value={data.message}
               />
               <Button className="max-w-40" size={"md"} disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"}
