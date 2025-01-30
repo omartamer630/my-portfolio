@@ -55,6 +55,14 @@ const Contact = () => {
       setError(true);
     } finally {
       setIsSubmitting(false);
+      setData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+        service: "",
+      });
     }
   };
 
