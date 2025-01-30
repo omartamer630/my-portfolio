@@ -22,7 +22,7 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col transition-transform duration-300 ease-in-out">
         <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-32 mb-24 text-center text-2xl">
           <Link href="/">
             <h1 className="flex items-center text-3xl font-semibold gap-1">
               {personal.firstName}
@@ -32,7 +32,7 @@ const MobileNav = () => {
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col mt-32 justify-center items-center gap-8">
+        <nav className="flex flex-col mt-6 justify-center items-center gap-8">
           {links.map((link, index) => (
             <Link
               href={link.path}
