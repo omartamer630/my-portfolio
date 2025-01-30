@@ -99,7 +99,7 @@ const Contact = () => {
               </h3>
               <div className="grid grid-cols-1 md:grid-2 gap-6">
                 <Input
-                  type="firstName"
+                  type="text"
                   placeholder="First Name"
                   className=""
                   required={true}
@@ -108,7 +108,7 @@ const Contact = () => {
                   }
                 />
                 <Input
-                  type="lastName"
+                  type="text"
                   placeholder="Last Name"
                   className=""
                   required={true}
@@ -124,7 +124,7 @@ const Contact = () => {
                   onChange={(e) => setData({ ...data, email: e.target.value })}
                 />
                 <Input
-                  type="phone"
+                  type="tel"
                   placeholder="Phone"
                   className=""
                   required={true}
