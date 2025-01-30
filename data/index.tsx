@@ -21,7 +21,7 @@ export const stats = [
   { name: "Free Lancing Projects", value: 1 },
   { name: "Side Projects", value: 19 },
   { name: "Technolgies Learned", value: 8 },
-  { name: "Code Commits", value: 848 },
+  { name: "Code Commits", value: 855 },
 ];
 
 export const services = [

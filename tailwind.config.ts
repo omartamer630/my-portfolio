@@ -41,7 +41,15 @@ export default {
       "fade-out": "fade-out 0.3s ease-in-out",
       "slide-in-from-right": "slide-in-from-right 0.3s ease-out",
       "slide-out-to-right": "slide-out-to-right 0.3s ease-in",
+      pulse: "pulse 1.5s infinite",
     },
+    keyframes: {
+      pulse: {
+        "0%, 100%": { transform: "scale(1)", opacity: "1" },
+        "50%": { transform: "scale(1.05)", opacity: "0.7" },
+      },
+    },
+
     plugins: ["animate"],
   },
   plugins: [animate],

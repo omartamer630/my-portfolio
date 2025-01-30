@@ -3,6 +3,7 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { services } from "@/data";
+import Link from "next/link";
 const Services = () => {
   return (
     <section className="flex flex-col justify-center py-12 lx:py-0 min-h-[80vh] ">
@@ -23,9 +24,9 @@ const Services = () => {
                 <div className="font-extrabold text-5xl text-outline text-transparent transition-all duration-500 group-hover:text-outline-hover">
                   {service.number}
                 </div>
-                <div className="flex justify-center items-center w-[70px] h-[70px] rounded-full bg-white hover:rotate-[-45deg] group-hover:bg-accent transition-all duration-500">
+                <Link href="/contact" className="flex justify-center items-center w-[70px] h-[70px] rounded-full bg-white hover:rotate-[-45deg] group-hover:bg-accent transition-all duration-500">
                   <BsArrowDownRight className="text-primary text-3xl" />
-                </div>
+                </Link>
               </div>
               <h2 className="font-semibold text-2xl">{service.title}</h2>
               <p className="text-white/60">{service.description}</p>
