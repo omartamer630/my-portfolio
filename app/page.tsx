@@ -1,11 +1,14 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import { personal } from "@/data/index";
 import Socials from "@/components/home/Socials";
 import Photo from "@/components/home/Photo";
 import Stats from "@/components/home/Stats";
-import Link from "next/link";
 export default function Home() {
+  const navigateTo = () => {
+    window.open(personal.cv, "_blank");
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -20,15 +23,16 @@ export default function Home() {
               {personal.summary}
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="flex uppercase s">
-                <Link
-                  href={`${personal.cv ?? "#"}`}
-                  className="flex items-center gap-2"
-                  target="_blank"
-                >
+              <Button
+                variant="outline"
+                size="lg"
+                className="flex uppercase s"
+                onClick={navigateTo}
+              >
+                <div className="flex items-center gap-2">
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
-                </Link>
+                </div>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials
