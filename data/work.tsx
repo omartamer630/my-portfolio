@@ -1,0 +1,140 @@
+export const projects = [
+  {
+    id: 1,
+    category: "Fullstack",
+    title: "Syntax Error",
+    description: `A website that showcases available courses and allows users to subscribe. It features a comprehensive
+dashboard for managing courses and admins, with an integrated quiz system that enables course
+creators to design and manage quizzes, review grading workflows, and display submissions effectively.`,
+    stack: [
+      {
+        name: "Next.js",
+      },
+      { name: "Redux" },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Prisma" },
+      { name: "PostgreSQL" },
+      { name: "DaisyUI" },
+      { name: "Filepond" },
+    ],
+    mainImage: "https://i.imgur.com/KJoPI7W.png",
+    live: "https://sytnax-error.vercel.app/",
+    github: null,
+    status: "completed",
+  },
+  {
+    id: 2,
+    category: "Fullstack",
+    title: "Promptopia",
+    description: `A web application designed to provide a platform for creating and sharing writing
+prompts. Users can explore various prompts.`,
+    stack: [
+      {
+        name: "Next.js",
+      },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Mongoose" },
+      { name: "MongoDB" },
+      { name: "OAuth" },
+    ],
+    mainImage: "https://i.imgur.com/pY9Paxr.png",
+    live: "https://promptopia-roan-ten.vercel.app/",
+    github: "https://github.com/Khemu1/promptopia",
+    status: "completed",
+  },
+  {
+    id: 3,
+    category: "Fullstack",
+    title: "Omni Store",
+    description: `An E-Commerce site, featuring a full-featured shopping experience with user authentication,
+product listings, shopping cart, and wishlist`,
+    stack: [
+      {
+        name: "React",
+      },
+      { name: "Redux" },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Node.Js" },
+      { name: "Express.Js" },
+      { name: "Mongoose" },
+      { name: "MongoDB" },
+      { name: "Vite" },
+    ],
+    mainImage: "https://i.imgur.com/LGoj2E9.png",
+    live: null,
+    github: "https://github.com/Khemu1/Omni-Store-E-Commerce",
+    status: "completed",
+  },
+  {
+    id: 4,
+    category: "Frontend",
+    title: "Anime Web Streaming Up",
+    description: `An anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, Tailwind CSS and Shadcn components for a seamless user experience.`,
+    stack: [
+      {
+        name: "Vue",
+      },
+      { name: "Pinia Store" },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Shadcn" },
+      { name: "Vite" },
+    ],
+    mainImage: "https://i.imgur.com/J9DPmqg.png",
+    live: null,
+    github: null,
+    status: "work in progress",
+  },
+
+  {
+    id: 5,
+    category: "Fullstack",
+    title: "Survey Builder",
+    description: `A web application designed for creating, sharing, and collaborating on surveys in real time. Users can
+easily design surveys and share them with others, the platform leverages WebSocket technology to
+provide live updates, ensuring that all collaborators in a group are instantly synchronized with the latest
+changes.`,
+    stack: [
+      {
+        name: "React",
+      },
+      { name: "Redux" },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Node.Js" },
+      { name: "Express.Js" },
+      { name: "WebSockets" },
+      { name: "I18n" },
+      { name: "Sequlize" },
+      { name: "PostgresSQL" },
+      { name: "Vite" },
+    ],
+    mainImage: "https://i.imgur.com/QP5xUFa.png",
+    live: null,
+    github: "https://github.com/Khemu1/survey-builder",
+    status: "completed",
+  },
+  {
+    id: 6,
+    category: "Fullstack",
+    title: "Link Shortener",
+    description: `A web application that enables users to shorten URLs using custom links and provides QR codes for each custom link. The application also tracks and displays the total number of views for each link on the user's profile page`,
+    stack: [
+      {
+        name: "JavaScript",
+      },
+      { name: "Express.js" },
+      { name: "Node.js" },
+      { name: "Mongoose" },
+      { name: "Mongodb" },
+      { name: "Vite" },
+    ],
+    mainImage: "https://i.imgur.com/BFcMrYa.png",
+    live: null,
+    github: "https://github.com/Khemu1/Code-Clause-Internship-Link-Shortner",
+    status: "completed",
+  },
+];

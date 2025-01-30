@@ -35,8 +35,8 @@ const Resume = () => {
           </TabsList>
           <div className="min-h-[70dvh] w-full">
             <TabsContent value="experince" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl-text-left">
-                <h3 className="text-4xl font-bold">{experince.title}</h3>
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold ">{experince.title}</h3>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
                     {experince.items.map((item, index) => (
@@ -60,7 +60,7 @@ const Resume = () => {
             </TabsContent>
 
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl-text-left">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
