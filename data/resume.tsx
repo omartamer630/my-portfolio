@@ -31,7 +31,7 @@ export const about = {
     },
     {
       name: "Phone",
-      value: "(+20) 100 062 766",
+      value: "(+20) 100 062 7666",
     },
     {
       name: "Experince",

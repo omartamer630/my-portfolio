@@ -4,7 +4,7 @@ export const info = [
   {
     icons: <FaPhoneAlt />,
     name: "Phone",
-    value: "(+20) 100 062 766",
+    value: "(+20) 100 062 7666",
   },
   {
     icons: <FaEnvelope />,
