@@ -22,8 +22,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 
 export const about = {
   title: "About Me",
-  description:
-    "I am a passionate Full Stack Developer with a decent background in web development. I have a proven track record of delivering high-quality, scalable, and efficient web applications. My expertise lies in building robust and responsive user interfaces using React, Next.js, and TypeScript.",
+  description: ` I'm a passionate Full Stack Developer with a decent background in web development. I have a proven track record of delivering high-quality, scalable, and efficient web applications. My expertise lies in building robust and responsive user interfaces using React, Next.js, and TypeScript. I always focus on building a well-structured codebase while striving to avoid redundancy, ensuring maintainability and scalability.`,
   info: [
     {
       name: "Name",
