@@ -9,12 +9,15 @@ import {
 } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsImages } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
-import "swiper/css";
 import { useState } from "react";
 import SliderButtons from "@/components/swiper/SliderButtons";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import ImagesSwiper from "@/components/swiper/ImagesSwiper";
+import { DialogTitle } from "@radix-ui/react-dialog";
+
 const Work = () => {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
@@ -22,6 +25,7 @@ const Work = () => {
     const currentIndex = swiper.activeIndex;
     setActiveProject(projects[currentIndex]);
   };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -33,6 +37,7 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
+          {/* Left text side */}
           <div className="flex flex-col xl:justify-between order-2 xl:order-none w-full xl:w-[50%] xl:h-[460px] ">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -92,29 +97,54 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="w-full xl:w-[50%]">
+          {/* Right image side */}
+          <div className="w-full xl:w-[50%] relative">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
               className="xl-h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((prject, index) => (
-                <SwiperSlide key={index} className="w-full ">
-                  <div className="h-[460px] relative group flex justify-center items-center ">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={prject.mainImage}
-                        alt="project"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </div>
+              {projects.map((project, index) => (
+                <SwiperSlide key={index} className="w-full">
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="relative group">
+                        <div
+                          className="h-[460px] relative flex justify-center items-center cursor-pointer"
+                          onClick={() => setActiveProject(project)}
+                        >
+                          <div className="relative w-full h-full">
+                            <Image
+                              src={project.mainImage}
+                              alt="project"
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+
+                          {/* album indicator (smaller, always visible) */}
+                          <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-black/70 px-3 py-1.5 rounded-full">
+                            <BsImages className="text-white" />
+                            <span className="text-white text-sm">
+                              {project.album.length} images
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </DialogTrigger>
+                    <DialogContent className="bg- border-0 max-w-[90vw] max-h-[90vh]">
+                      <DialogTitle className="text-accent font-semibold text-xl mb-4 absolute top-[-10px] left-5  ">
+                        {activeProject.title} - Gallery
+                      </DialogTitle>
+                      <ImagesSwiper images={project.album} />
+                    </DialogContent>
+                  </Dialog>
                 </SwiperSlide>
               ))}
+
               <SliderButtons
-                continerStyle="flex w-max justify-none gap-2 absolute right-0 bottom-0 z-20 w-full "
+                continerStyle="flex w-max justify-none gap-2 absolute right-0 bottom-0 z-20 w-full"
                 btnStyle="flex justify-center items-center transition-all bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] rounded-sm"
               />
             </Swiper>
