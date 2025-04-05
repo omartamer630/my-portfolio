@@ -7,11 +7,78 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
 
 import { experince, education, skills, about } from "@/data/resume";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
+const SectionTitle = ({ title }: { title: string }) => (
+  <h3 className="text-4xl font-bold">{title}</h3>
+);
+
+const ResumeItem = ({
+  duration,
+  title,
+  subtitle,
+}: {
+  duration: string;
+  title: string;
+  subtitle: string;
+}) => (
+  <li className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 h-[184px]">
+    <span className="text-accent">{duration}</span>
+    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+      {title}
+    </h3>
+    <div className="flex items-center gap-3">
+      <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+      <p className="text-white/60">{subtitle}</p>
+    </div>
+  </li>
+);
+
+const EducationItem = ({
+  duration,
+  degree,
+  course,
+  instructor,
+  level,
+  institution,
+}: {
+  duration: string;
+  degree?: string | null;
+  course?: string | null;
+  instructor?: string;
+  level?: string;
+  institution?: string;
+}) => (
+  <div className="bg-[#232329] p-6 rounded-xl h-full flex flex-col">
+    <span className="text-accent mb-2">{duration}</span>
+    <h3 className="text-xl font-medium mb-4">{degree ?? course}</h3>
+
+    <div className="mt-auto space-y-2">
+      {institution && (
+        <div className="flex items-start gap-3">
+          <span className="w-[6px] h-[6px] rounded-full bg-accent mt-2 flex-shrink-0" />
+          <p className="text-white/60">{institution}</p>
+        </div>
+      )}
+      {level && (
+        <div className="flex items-start gap-3">
+          <span className="w-[6px] h-[6px] rounded-full bg-accent mt-2 flex-shrink-0" />
+          <p className="text-white/60">{level}</p>
+        </div>
+      )}
+      {instructor && (
+        <div className="flex items-start gap-3">
+          <span className="w-[6px] h-[6px] rounded-full bg-accent mt-2 flex-shrink-0" />
+          <p className="text-white/60">Instructor: {instructor}</p>
+        </div>
+      )}
+    </div>
+  </div>
+);
+
 const Resume = () => {
   return (
     <motion.div
@@ -28,69 +95,57 @@ const Resume = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experince">Experince</TabsTrigger>
+            <TabsTrigger value="experince">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
+
           <div className="min-h-[70dvh] w-full">
-            <TabsContent value="experince" className="w-full">
+            <TabsContent value="experince">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{experince.title}</h3>
+                <SectionTitle title={experince.title} />
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experince.items.map((item, index) => (
-                      <li
+                      <ResumeItem
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.position}
-                        </h3>
-                        <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.company}</p>
-                        </div>
-                      </li>
+                        duration={item.duration}
+                        title={item.position}
+                        subtitle={item.company}
+                      />
                     ))}
                   </ul>
                 </ScrollArea>
               </div>
             </TabsContent>
 
-            <TabsContent value="education" className="w-full">
+            <TabsContent value="education">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
+                <SectionTitle title={education.title} />
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] ">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((item, index) => (
-                      <li
+                      <EducationItem
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.degree ?? item.course}
-                        </h3>
-                        <div className="flex items-center gap-3">
-                          <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.institution}</p>
-                        </div>
-                      </li>
+                        duration={item.duration}
+                        degree={item.degree}
+                        course={item.course}
+                        instructor={item.instructor}
+                        level={item.level}
+                        institution={item.institution}
+                      />
                     ))}
-                  </ul>
+                  </div>
                 </ScrollArea>
-              </div>{" "}
+              </div>
             </TabsContent>
 
-            <TabsContent value="skills" className="w-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                </div>
+            <TabsContent value="skills">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <SectionTitle title={skills.title} />
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid mt-4 gap-[20px] grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] ">
+                  <ul className="grid mt-4 gap-[20px] grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
                     {skills.skillList.map((skill, index) => (
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
@@ -100,7 +155,7 @@ const Resume = () => {
                                 {skill.icon}
                               </div>
                               <TooltipContent>
-                                <p className="capitalize ">{skill.name}</p>
+                                <p className="capitalize">{skill.name}</p>
                               </TooltipContent>
                             </TooltipTrigger>
                           </Tooltip>
@@ -109,12 +164,12 @@ const Resume = () => {
                     ))}
                   </ul>
                 </ScrollArea>
-              </div>{" "}
+              </div>
             </TabsContent>
 
-            <TabsContent value="about" className="w-full">
-              <div className="flex flex-col gap-[30px] ">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
+            <TabsContent value="about">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <SectionTitle title={about.title} />
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>

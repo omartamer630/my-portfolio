@@ -45,29 +45,6 @@ creators to design and manage quizzes, review grading workflows, and display sub
     status: "completed",
   },
   {
-    id: 2,
-    category: "Fullstack",
-    title: "Promptopia",
-    description: `A web application designed to provide a platform for creating and sharing writing
-prompts. Users can explore various prompts.`,
-    stack: [
-      {
-        name: "Next.js",
-      },
-      { name: "Typescript" },
-      { name: "TailwindCSS" },
-      { name: "Mongoose" },
-      { name: "MongoDB" },
-      { name: "OAuth" },
-    ],
-    mainImage: "https://i.imgur.com/pY9Paxr.png",
-    album: ["https://i.imgur.com/pY9Paxr.png"],
-
-    live: "https://promptopia-roan-ten.vercel.app/",
-    github: "https://github.com/Khemu1/promptopia",
-    status: "completed",
-  },
-  {
     id: 3,
     category: "Fullstack",
     title: "Omni Store",
@@ -86,12 +63,75 @@ product listings, shopping cart, and wishlist`,
       { name: "MongoDB" },
       { name: "Vite" },
     ],
-    mainImage: "https://i.imgur.com/LGoj2E9.png",
-    album: ["https://i.imgur.com/LGoj2E9.png"],
+    mainImage: "https://i.imgur.com/tbqs0DF.png",
+    album: [
+      "https://i.imgur.com/tbqs0DF.png",
+      "https://i.imgur.com/GQRzugt.png",
+      "https://i.imgur.com/Domx1RM.png",
+      "https://i.imgur.com/QDH8531.png",
+      "https://i.imgur.com/m68daqT.png",
+      "https://i.imgur.com/wXnzZSo.png",
+      "https://i.imgur.com/AcLxeS8.png",
+    ],
     live: null,
     github: "https://github.com/Khemu1/Omni-Store-E-Commerce",
     status: "completed",
   },
+  {
+    id: 5,
+    category: "Backend",
+    title: "Space Launch System",
+    description: `A full-stack application that manages upcoming space launches and planetary data. It allows users to view, add, and abort launches while maintaining a list of habitable exoplanets using NASA Exoplanet Archive. Additionally, it integrates the SpaceX API to display a list of completed SpaceX launch missions.`,
+    stack: [
+      { name: "Node.Js" },
+      { name: "Express.Js" },
+      { name: "Typescript" },
+      { name: "Mongoose" },
+      { name: "MongoDB" },
+      { name: "helmet.Js" },
+      { name: "pm2" },
+      { name: "jest" },
+      { name: "csv-parser" },
+    ],
+    mainImage: "https://i.imgur.com/OUdhnoI.png",
+    album: [
+      "https://i.imgur.com/OUdhnoI.png",
+      "https://i.imgur.com/7bGslsV.png",
+      "https://i.imgur.com/9OT2QJS.png",
+    ],
+    live: null,
+    github: "https://github.com/Khemu1/space-launch-system-",
+    status: "completed",
+  },
+  {
+    id: 2,
+    category: "Fullstack",
+    title: "Promptopia",
+    description: `A web application designed to provide a platform for creating and sharing writing
+prompts. Users can explore various prompts.`,
+    stack: [
+      {
+        name: "Next.js",
+      },
+      { name: "Typescript" },
+      { name: "TailwindCSS" },
+      { name: "Mongoose" },
+      { name: "MongoDB" },
+      { name: "OAuth" },
+    ],
+    mainImage: "https://i.imgur.com/pY9Paxr.png",
+    album: [
+      "https://i.imgur.com/pY9Paxr.png",
+      "https://i.imgur.com/BG905mX.png",
+      "https://i.imgur.com/1pzsrJF.png",
+      "https://i.imgur.com/5DUWXPz.png",
+    ],
+
+    live: "https://promptopia-roan-ten.vercel.app/",
+    github: "https://github.com/Khemu1/promptopia",
+    status: "completed",
+  },
+
   {
     id: 4,
     category: "Frontend",
@@ -115,13 +155,9 @@ product listings, shopping cart, and wishlist`,
   },
 
   {
-    id: 5,
     category: "Fullstack",
     title: "Survey Builder",
-    description: `A web application designed for creating, sharing, and collaborating on surveys in real time. Users can
-easily design surveys and share them with others, the platform leverages WebSocket technology to
-provide live updates, ensuring that all collaborators in a group are instantly synchronized with the latest
-changes.`,
+    description: `A real-time web application for creating, sharing, and collaborating on surveys. Users can effortlessly design surveys and invite others to collaborate. Powered by WebSocket technology, the platform delivers live updates, ensuring all collaborators stay instantly synchronized with the latest changes. This project served as inspiration for SyntaxError.`,
     stack: [
       {
         name: "React",
@@ -158,9 +194,12 @@ changes.`,
       { name: "Mongodb" },
       { name: "Vite" },
     ],
-    mainImage: "https://i.imgur.com/BFcMrYa.png",
+    mainImage: "https://i.imgur.com/KAAeMZ9.png",
     live: null,
-    album: ["https://i.imgur.com/BFcMrYa.png"],
+    album: [
+      "https://i.imgur.com/KAAeMZ9.png",
+      "https://i.imgur.com/cc1AYHc.png",
+    ],
     github: "https://github.com/Khemu1/Code-Clause-Internship-Link-Shortner",
     status: "completed",
   },

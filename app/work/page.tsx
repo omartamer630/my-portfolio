@@ -37,7 +37,6 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          {/* Left text side */}
           <div className="flex flex-col xl:justify-between order-2 xl:order-none w-full xl:w-[50%] xl:h-[460px] ">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
@@ -49,6 +48,12 @@ const Work = () => {
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {activeProject.title}
               </h2>
+              <h4 className="text-[32px] font-semibold">
+                Role:{" "}
+                <b className="text-accent/95">
+                  {activeProject.category} Developer
+                </b>
+              </h4>
               <p className="text-white/60">{activeProject.description}</p>
               {activeProject.status !== "completed" && (
                 <p className="text-accent/80  font-bold capitalize text-xl">
@@ -134,10 +139,11 @@ const Work = () => {
                       </div>
                     </DialogTrigger>
                     <DialogContent className="bg- border-0 max-w-[90vw] max-h-[90vh]">
-                      <DialogTitle className="text-accent font-semibold text-xl mb-4 absolute top-[-10px] left-5  ">
-                        {activeProject.title} - Gallery
-                      </DialogTitle>
-                      <ImagesSwiper images={project.album} />
+                      <DialogTitle className="text-accent font-semibold text-xl mb-4 absolute top-[-10px] left-5  "></DialogTitle>
+                      <ImagesSwiper
+                        images={project.album}
+                        title={`${activeProject.title} - Gallery`}
+                      />
                     </DialogContent>
                   </Dialog>
                 </SwiperSlide>

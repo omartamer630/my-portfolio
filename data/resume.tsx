@@ -102,6 +102,13 @@ export const education = {
       gpa: null,
       degree: null,
     },
+    {
+      institution: "Udemy",
+      course: " Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
+      level: "Beginner-Intermediate",
+      instructor: "Mohamed Naga",
+      duration: "2025",
+    },
   ],
 };
 
