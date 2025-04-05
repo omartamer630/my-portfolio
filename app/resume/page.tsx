@@ -20,10 +20,12 @@ const ResumeItem = ({
   duration,
   title,
   subtitle,
+  name,
 }: {
   duration: string;
   title: string;
   subtitle: string;
+  name?: string;
 }) => (
   <li className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 h-[184px]">
     <span className="text-accent">{duration}</span>
@@ -34,6 +36,12 @@ const ResumeItem = ({
       <span className="w-[6px] h-[6px] rounded-full bg-accent" />
       <p className="text-white/60">{subtitle}</p>
     </div>
+    {name && (
+      <div className="flex items-center gap-3">
+        <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+        <p className="text-white/60">{name}</p>
+      </div>
+    )}
   </li>
 );
 
