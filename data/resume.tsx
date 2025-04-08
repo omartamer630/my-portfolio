@@ -136,7 +136,7 @@ export const categorizedSkills = {
     { icon: <FaJsSquare />, name: "JavaScript" },
     { icon: <BiLogoTypescript />, name: "TypeScript" },
     { icon: <FaReact />, name: "React" },
-    { icons: <SiNextdotjs />, name: "Next.js" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <FaVuejs />, name: "Vue" },
     { icon: <SiRedux />, name: "Redux" },
     { icon: <SiReactquery />, name: "React Query" },
