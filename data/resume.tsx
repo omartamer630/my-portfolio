@@ -24,6 +24,7 @@ import {
   SiPrisma,
   SiSequelize,
   SiTypeorm,
+  SiNextdotjs,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -135,6 +136,7 @@ export const categorizedSkills = {
     { icon: <FaJsSquare />, name: "JavaScript" },
     { icon: <BiLogoTypescript />, name: "TypeScript" },
     { icon: <FaReact />, name: "React" },
+    { icons: <SiNextdotjs />, name: "Next.js" },
     { icon: <FaVuejs />, name: "Vue" },
     { icon: <SiRedux />, name: "Redux" },
     { icon: <SiReactquery />, name: "React Query" },
