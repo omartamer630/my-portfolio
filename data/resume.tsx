@@ -6,6 +6,7 @@ import {
   FaVuejs,
   FaNodeJs,
   FaCss3Alt,
+  FaLock,
 } from "react-icons/fa";
 
 import {
@@ -17,6 +18,12 @@ import {
   SiRedux,
   SiReactquery,
   SiPostman,
+  SiGraphql,
+  SiJest,
+  SiPm2,
+  SiPrisma,
+  SiSequelize,
+  SiTypeorm,
 } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 
@@ -119,72 +126,35 @@ export const education = {
   ],
 };
 
-export const skills = {
-  title: "My Skills",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "HTML5",
-    },
-    {
-      icon: <FaCss3Alt />,
-      name: "CSS3",
-    },
-    {
-      icon: <FaBootstrap />,
-      name: "Bootstrap",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Twilwind",
-    },
-    {
-      icon: <FaJsSquare />,
-      name: "JavaScript",
-    },
-    {
-      icon: <BiLogoTypescript />,
-      name: "TypeScript",
-    },
-    {
-      icon: <FaReact />,
-      name: "React",
-    },
-    {
-      icon: <SiRedux />,
-      name: "Redux",
-    },
-    {
-      icon: <SiReactquery />,
-      name: "React Query",
-    },
-    {
-      icon: <FaVuejs />,
-      name: "Vue",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
-      icon: <SiExpress />,
-      name: "Express.js",
-    },
-    {
-      icon: <SiMongodb />,
-      name: "MongoDB",
-    },
-    {
-      icon: <SiPostgresql />,
-      name: "PostgreSQL",
-    },
-    {
-      icon: <SiMysql />,
-      name: "MySQL",
-    },
-    {
-      icon: <SiPostman />,
-      name: "Postman",
-    },
+export const categorizedSkills = {
+  frontend: [
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3Alt />, name: "CSS3" },
+    { icon: <FaBootstrap />, name: "Bootstrap" },
+    { icon: <SiTailwindcss />, name: "Tailwind" },
+    { icon: <FaJsSquare />, name: "JavaScript" },
+    { icon: <BiLogoTypescript />, name: "TypeScript" },
+    { icon: <FaReact />, name: "React" },
+    { icon: <FaVuejs />, name: "Vue" },
+    { icon: <SiRedux />, name: "Redux" },
+    { icon: <SiReactquery />, name: "React Query" },
   ],
+  backend: [
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <BiLogoTypescript />, name: "TypeScript" },
+    { icon: <SiExpress />, name: "Express.js" },
+    { icon: <SiGraphql />, name: "GraphQL" },
+    { icon: <FaLock />, name: "JWT" },
+    { icon: <SiPm2 />, name: "PM2" },
+    { icon: <SiPrisma />, name: "Prisma" },
+    { icon: <SiTypeorm />, name: "TypeORM" },
+    { icon: <SiSequelize />, name: "Sequelize" },
+  ],
+  database: [
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiMysql />, name: "MySQL" },
+  ],
+  tools: [{ icon: <SiPostman />, name: "Postman" }],
+  testing: [{ icon: <SiJest />, name: "Jest" }],
 };
