@@ -119,9 +119,17 @@ export const education = {
     },
     {
       institution: "Udemy",
-      course: " Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
+      course: "Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
       level: "Beginner-Intermediate",
       instructor: "Mohamed Naga",
+      duration: "2025",
+    },
+    {
+      institution: "Udemy",
+      course:
+        "Node.js: Internals, REST & GraphQL APIs, Performance, and Cloud Deployment",
+      level: "Advanced",
+      instructor: "Andrei Neagoie, Adam Odziemkowski",
       duration: "2025",
     },
   ],
