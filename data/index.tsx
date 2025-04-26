@@ -18,30 +18,29 @@ export const personal = {
 
 export const stats = [
   { name: "Years of Experience", value: 1 },
-  { name: "Free Lancing Projects", value: 1 },
-  { name: "Side Projects", value: 19 },
-  { name: "Technolgies Learned", value: 8 },
-  { name: "Code Commits", value: 855 },
+  { name: "Free Lancing Projects", value: 2 },
+  { name: "Side Projects", value: 62 },
+  { name: "Code Commits", value: 1200 },
 ];
 
 export const services = [
   {
-    title: "Frontend Developer",
+    title: "Frontend Development",
     number: "01",
     description:
-      "I specialize in building modern and responsive web applications using React, Next.js, TypeScript, and Tailwind CSS. My focus is on creating scalable, efficient, and visually appealing user interfaces.",
+      "I specialize in building modern, responsive user interfaces using React, Next.js, and TypeScript. With expertise in state management (Redux, React Query) and UI frameworks (Tailwind CSS, DaisyUI), I focus on delivering intuitive, accessible experiences. I also leverage Zod for robust form validation, ensuring clean, maintainable, and high-performance code.",
   },
   {
-    title: "Backend Developer",
+    title: "Backend Development",
     number: "02",
     description:
-      "I have experience developing robust and scalable backend systems using Node.js, Express, and TypeScript. I work with databases like MongoDB and PostgreSQL, utilizing Prisma and Mongoose for efficient data handling.",
+      "I create scalable, high-performance APIs using Node.js, Express, and TypeScript. My experience includes working with both SQL (PostgreSQL) and NoSQL (MongoDB) databases, as well as ORMs like Prisma and Sequelize. I prioritize security and efficiency, implementing authentication solutions with JWT and OAuth, and designing RESTful APIs for optimal data handling.",
   },
   {
-    title: "Full Stack Developer",
+    title: "Full-Stack Solutions",
     number: "03",
     description:
-      "With expertise in both frontend and backend development, I build end-to-end web applications using React, Next.js, Node.js, Express, and TypeScript. I focus on performance, scalability, and seamless user experiences.",
+      "I deliver end-to-end web applications by combining frontend and backend expertise. My toolkit includes Next.js for server-side rendering (SSR), WebSockets for real-time features, and TypeScript for strong type safety. I ensure seamless integration between the frontend and backend, creating cohesive and efficient user experiences.",
   },
 ];
 

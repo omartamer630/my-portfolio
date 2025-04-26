@@ -132,6 +132,14 @@ export const education = {
       instructor: "Andrei Neagoie, Adam Odziemkowski",
       duration: "2025",
     },
+    {
+      institution: "Udemy",
+      course:
+        "Mastering Advanced Node.js: Event Loop, Redis Caching, File Uploads with AWS S3, and CI/CD Testing",
+      level: "Advanced",
+      instructor: "Stephen Grider",
+      duration: "2025",
+    },
   ],
 };
 
