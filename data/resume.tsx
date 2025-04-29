@@ -85,7 +85,7 @@ export const experince = {
         "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
     },
     {
-      company: "Prime Academy",
+      company: "Prime Academy (Freelance)",
       position: "React Frontend Developer",
       duration: "Jan 2025 - Present",
       description:
