@@ -80,7 +80,7 @@ export const experince = {
     {
       company: "Freelance Project",
       position: "Vue Frontend Developer",
-      duration: "2024 - Present",
+      duration: "Nov 2024 - Jan 2025",
       description:
         "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
     },
