@@ -63,9 +63,9 @@ export const experince = {
   title: "My Experience",
   items: [
     {
-      company: "Syntax Error",
+      company: "Syntax Error (Freelance)",
       position: "Full Stack Developer",
-      duration: "2024 - 2025",
+      duration: "Oct 2024 - Jan 2025",
       description:
         "Developed a full-stack web application using Next.js, Prisma, Redux, and JWT for authentication. Built a dynamic landing page, a course management system, an admin dashboard for course creation, and an interactive quiz system similar to Porsline. Utilized DaisyUI with Tailwind CSS for a clean and responsive UI.",
     },
