@@ -10,8 +10,8 @@ export const personal = {
   freeLance: "Available",
   languages: ["English", "Arabic"],
   expreince: "1 Year",
-  summary:
-    "Self-motivated Full Stack Developer with hands-on experience in creating dynamic and responsive web applications. Proficient in front-end and back-end technologies.",
+  summary: `
+  Self-motivated Backend-leaning Full Stack Developer with hands-on experience building scalable and efficient web applications. Proficient in designing APIs, managing databases, and implementing secure, real-time backend systems — with solid frontend experience using modern JavaScript frameworks.`,
   image: "/assets/home/image.png",
   cv: "https://drive.google.com/drive/u/0/folders/1dsYyVv3Q96oMVZuxAlE07FeIG6Lwq5D5",
 };
