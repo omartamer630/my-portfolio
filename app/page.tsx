@@ -1,23 +1,32 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { GiScarabBeetle, GiEgyptianProfile } from "react-icons/gi";
 import { personal } from "@/data/index";
 import Socials from "@/components/home/Socials";
 import Photo from "@/components/home/Photo";
 import Stats from "@/components/home/Stats";
+
 export default function Home() {
   const navigateTo = () => {
     window.open(personal.cv, "_blank");
   };
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="font-semibold">FullStack Web Developer</span>
-            <h1 className="h1">
+            <span className="font-semibold flex items-center justify-center xl:justify-start gap-2 text-yellow-400">
+              <GiEgyptianProfile />
+              FullStack Web Developer
+              <GiScarabBeetle />
+            </span>
+            <h1 className="h1 mt-2">
               Hello I&apos;m <br />
-              <span className="text-accent">{personal.name}</span>
+              <span className="text-accent flex items-center justify-center xl:justify-start gap-2">
+                {personal.name}
+              </span>
             </h1>
             <p className="mb-9 mt-2 max-w-[500px] text-white/80">
               {personal.summary}
@@ -26,7 +35,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 size="lg"
-                className="flex uppercase s"
+                className="flex uppercase"
                 onClick={navigateTo}
               >
                 <div className="flex items-center gap-2">
@@ -37,7 +46,7 @@ export default function Home() {
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyle="flex gap-6"
-                  iconStyle="flex justify-center items-center w-9 h-9 border border-accent rounded-full  text-accent text-base hover:bg-accent hover:text-primary hover:transtion-all duration-500"
+                  iconStyle="flex justify-center items-center w-9 h-9 border border-accent rounded-full text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
                 />
               </div>
             </div>
