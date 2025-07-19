@@ -32,6 +32,7 @@ import {
   SiDocker,
   SiGithubactions,
   SiTravisci,
+  SiSqlite,
 } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 
@@ -181,6 +182,7 @@ export const categorizedSkills = {
     { icon: <SiMongodb />, name: "MongoDB" },
     { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiMysql />, name: "MySQL" },
+    { icon: <SiSqlite />, name: "SQLite" },
   ],
   tools: [
     { icon: <RiSupabaseFill />, name: "Supabase" },
