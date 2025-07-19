@@ -121,6 +121,7 @@ const Work = () => {
                         >
                           <div className="relative w-full h-full">
                             <Image
+                              loading="lazy"
                               src={project.mainImage}
                               alt="project"
                               fill

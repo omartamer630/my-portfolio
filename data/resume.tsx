@@ -7,6 +7,8 @@ import {
   FaNodeJs,
   FaCss3Alt,
   FaLock,
+  FaAws,
+  FaGithub,
 } from "react-icons/fa";
 
 import {
@@ -25,7 +27,14 @@ import {
   SiSequelize,
   SiTypeorm,
   SiNextdotjs,
+  SiCloudflare,
+  SiCloudflareworkers,
+  SiDocker,
+  SiGithubactions,
+  SiTravisci,
 } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
+
 import { BiLogoTypescript } from "react-icons/bi";
 
 export const about = {
@@ -86,8 +95,8 @@ export const experince = {
     },
     {
       company: "Prime Academy (Freelance)",
-      position: "React Frontend Developer",
-      duration: "Jan 2025 - Present",
+      position: "Fullstack Developer",
+      duration: "Feb 2025 - Present",
       description:
         "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
     },
@@ -173,6 +182,16 @@ export const categorizedSkills = {
     { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiMysql />, name: "MySQL" },
   ],
-  tools: [{ icon: <SiPostman />, name: "Postman" }],
+  tools: [
+    { icon: <RiSupabaseFill />, name: "Supabase" },
+    { icon: <FaGithub />, name: "Github" },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: <SiCloudflare />, name: "Cloudflare" },
+    { icon: <SiCloudflareworkers />, name: "Cloudflare Workers" },
+    { icon: <SiDocker />, name: "Docker" },
+    { icon: <SiTravisci />, name: "Travis CI" },
+    { icon: <SiGithubactions />, name: "GitHub Actions" },
+    { icon: <SiPostman />, name: "Postman" },
+  ],
   testing: [{ icon: <SiJest />, name: "Jest" }],
 };
