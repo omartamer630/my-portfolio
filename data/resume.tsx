@@ -73,6 +73,13 @@ export const experince = {
   title: "My Experience",
   items: [
     {
+      company: "Prime Academy (Freelance)",
+      position: "Fullstack Developer",
+      duration: "Feb 2025 - Present",
+      description:
+        "Built a modern E-learning platform with video support, interactive quizzes, chat, Cloudflare R2 uploads, and a full admin dashboard.",
+    },
+    {
       company: "Syntax Error (Freelance)",
       position: "Full Stack Developer",
       duration: "Oct 2024 - Jan 2025",
@@ -91,13 +98,6 @@ export const experince = {
       company: "Freelance Project",
       position: "Vue Frontend Developer",
       duration: "Nov 2024 - Jan 2025",
-      description:
-        "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
-    },
-    {
-      company: "Prime Academy (Freelance)",
-      position: "Fullstack Developer",
-      duration: "Feb 2025 - Present",
       description:
         "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
     },

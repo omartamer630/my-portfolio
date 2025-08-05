@@ -139,7 +139,7 @@ const Work = () => {
                         </div>
                       </div>
                     </DialogTrigger>
-                    <DialogContent className="bg- border-0 max-w-[90vw] max-h-[90vh]">
+                    <DialogContent className="bg- border-0">
                       <DialogTitle className="text-accent font-semibold text-xl mb-4 absolute top-[-10px] left-5  "></DialogTitle>
                       <ImagesSwiper
                         images={project.album}
