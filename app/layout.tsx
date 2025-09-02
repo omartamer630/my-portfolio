@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
 });
 export const metadata: Metadata = {
-  title: "Ali's Portfolio",
+  title: "Omar's Portfolio",
   description: "Full Stack Web Developer",
   icons: "",
 };

@@ -4,12 +4,12 @@ export const info = [
   {
     icons: <FaPhoneAlt />,
     name: "Phone",
-    value: "(+20) 100 062 7666",
+    value: "(+20) 155 521 5379",
   },
   {
     icons: <FaEnvelope />,
     name: "Email",
-    value: "alghost2004@gmail.com",
+    value: "omartamerdev@gmail.com",
   },
   {
     icons: <FaMapMarkerAlt />,
@@ -19,7 +19,6 @@ export const info = [
 ];
 
 export const services = [
-  {name:"Frontend Developer", value:"frontend"},
-  {name:"Backend Developer",value:"backend"},
-  {name:"Full Stack Developer", value:"fullstack"},
+  {name:"Cloud Engineer", value:"cloud"},
+  {name:"DevOps Engineer",value:"devops"},
 ]

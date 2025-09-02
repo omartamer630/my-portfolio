@@ -18,9 +18,7 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="font-semibold flex items-center justify-center xl:justify-start gap-2 text-yellow-400">
-              <GiEgyptianProfile />
-              FullStack Web Developer
-              <GiScarabBeetle />
+              Cloud/DevOps Engineer
             </span>
             <h1 className="h1 mt-2">
               Hello I&apos;m <br />

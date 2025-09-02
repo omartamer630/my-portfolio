@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
 import MobileNav from "@/components/MobileNav";
-import { FaAnkh } from "react-icons/fa6";
+import { IoMdCloudUpload } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -10,10 +10,10 @@ const Header = () => {
       <div className="container flex justify-between items-center mx-auto">
         <Link href="/" className="">
           {/* Logo */}
-          <h1 className="flex text-4xl font-semibold items-center gap-1">
-            Ali
+          <h1 className="flex text-4xl font-semibold items-end gap-1">
+            Omar
             <span className="text-accent text-3xl ">
-              <FaAnkh />
+              <IoMdCloudUpload />
             </span>
           </h1>
         </Link>
