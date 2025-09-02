@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import { GiScarabBeetle, GiEgyptianProfile } from "react-icons/gi";
 import { personal } from "@/data/index";
 import Socials from "@/components/home/Socials";
 import Photo from "@/components/home/Photo";
