@@ -31,13 +31,13 @@ export const services = [
     title: "Cloud Engineer",
     number: "01",
     description:
-      "I specialize in building modern, responsive user interfaces using React, Next.js, and TypeScript. With expertise in state management (Redux, React Query) and UI frameworks (Tailwind CSS, DaisyUI), I focus on delivering intuitive, accessible experiences. I also leverage Zod for robust form validation, ensuring clean, maintainable, and high-performance code.",
+      "Designing and running secure, scalable, and cost-efficient cloud systems on AWS and GCP. Experienced in building well-structured architectures, automating infrastructure with Terraform, and managing containerized applications. Skilled at creating multi-environment setups with strong networking and security practices, while keeping deployments reliable and easy to maintain. Focus is always on balancing performance, security, and cost to deliver practical, future-proof solutions.",
   },
   {
     title: "DevOps Engineer",
     number: "02",
     description:
-      "I create scalable, high-performance APIs using Node.js, Express, and TypeScript. My experience includes working with both SQL (PostgreSQL) and NoSQL (MongoDB) databases, as well as ORMs like Prisma and Sequelize. I prioritize security and efficiency, implementing authentication solutions with JWT and OAuth, and designing RESTful APIs for optimal data handling.",
+      "Design and implementation of scalable, secure, and automated DevOps workflows. Expertise includes building CI/CD pipelines with GitHub Actions and Jenkins, automating tasks with Bash and Python, and managing containerized environments using Docker. Infrastructure as Code is applied through Terraform to create reproducible, consistent environments, while version control best practices and automated testing ensure reliability and efficiency. Focus is placed on cost efficiency, security, and streamlined deployment processes.",
   },
 ];
 
