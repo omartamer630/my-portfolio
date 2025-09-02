@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 export const metadata: Metadata = {
   title: "Omar's Portfolio",
-  description: "Full Stack Web Developer",
+  description: "Cloud/DevOps Engineer",
   icons: "",
 };
 
