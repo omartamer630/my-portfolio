@@ -10,7 +10,7 @@ export const projects = [
       { name: "Terraform" },
       { name: "Github Action" },
     ],
-    mainImage: "https://postimg.cc/VJ88gzNb",
+    mainImage: "https://i.postimg.cc/pL9L2Tbk/Architecture.png",
     album: [],
 
     github: "https://github.com/omartamer630/deploy-django-application-cicd",

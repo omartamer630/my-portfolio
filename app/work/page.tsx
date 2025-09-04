@@ -51,7 +51,7 @@ const Work = () => {
               <h4 className="text-[32px] font-semibold">
                 Role:{" "}
                 <b className="text-accent/95">
-                  {activeProject.category} Developer
+                  {activeProject.category} Engineer
                 </b>
               </h4>
               <p className="text-white/60">{activeProject.description}</p>
