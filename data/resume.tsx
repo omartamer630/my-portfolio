@@ -90,6 +90,8 @@ export const education = {
       degree: "Bachelor of Science in Computer Science",
       duration: "2022 - 2026",
       course: null,
+      instructor: null,
+      level: "Undergraduate",   
     },
   ],
 };
