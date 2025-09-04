@@ -117,13 +117,43 @@ export const education = {
       duration: "2022 - 2026",
       course: null,
     },
-    // {
-    //   institution: "Manara",
-    //   course: "CCNA: Switching, Routing, and Wireless Essentials",
-    //   duration: "2025",
-    //   gpa: null,
-    //   degree: null,
-    // },
+    {
+      institution: "Cisco Networking Academy",
+      course: "CCNA: Switching, Routing, and Wireless Essentials",
+      duration: "2025",
+      gpa: null,
+      degree: null,
+    },
+    {
+      institution: "Cisco Networking Academy",
+      course: "CCNA: Introduction to Networks",
+      duration: "2024",
+      gpa: null,
+      degree: null,
+    },
+    {
+      institution: "Udemy",
+      course: "Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
+      level: "Beginner-Intermediate",
+      instructor: "Mohamed Naga",
+      duration: "2025",
+    },
+    {
+      institution: "Udemy",
+      course:
+        "Node.js: Internals, REST & GraphQL APIs, Performance, and Cloud Deployment",
+      level: "Advanced",
+      instructor: "Andrei Neagoie, Adam Odziemkowski",
+      duration: "2025",
+    },
+    {
+      institution: "Udemy",
+      course:
+        "Mastering Advanced Node.js: Event Loop, Redis Caching, File Uploads with AWS S3, and CI/CD Testing",
+      level: "Advanced",
+      instructor: "Stephen Grider",
+      duration: "2025",
+    },
   ],
 };
 
@@ -169,4 +199,5 @@ export const categorizedSkills = {
     { icon: <SiGithubactions />, name: "GitHub Actions" },
     { icon: <SiPostman />, name: "Postman" },
   ],
+  testing: [{ icon: <SiJest />, name: "Jest" }],
 };
