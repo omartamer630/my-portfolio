@@ -7,6 +7,9 @@ export const projects = [
     stack: [
       { name: "Docker" },
       { name: "AWS" },
+      { name: "VPC Endpoints" },
+      { name: "ECS" },
+      { name: "Load Balancer" },
       { name: "Terraform" },
       { name: "Github Action" },
     ],
@@ -35,8 +38,7 @@ export const projects = [
     ],
     mainImage: "https://i.postimg.cc/9MPnZGTb/Automation.gif",
     album: [],
-    live: null,
-    github: null,
+    github: "https://github.com/omartamer630/serverless-app",
     status: "completed",
   },
 ];
