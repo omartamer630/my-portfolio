@@ -38,6 +38,7 @@ export const projects = [
     ],
     mainImage: "https://i.postimg.cc/9MPnZGTb/Automation.gif",
     album: [],
+    live: "",
     github: "https://github.com/omartamer630/serverless-app",
     status: "completed",
   },
