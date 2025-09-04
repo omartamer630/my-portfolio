@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: 2,
-    category: "Cloud Engineer",
+    category: "Cloud",
     title: "Serverless App",
     description: `Developed a fully serverless web application on AWS with a focus on scalability, security, and cost efficiency. The backend was powered by AWS Lambda functions, integrated with API Gateway for endpoint management, and DynamoDB for persistent data storage. The frontend was hosted on Amazon S3 and delivered globally through CloudFront for low latency. Route 53 and AWS Certificate Manager (ACM) were configured to provide secure DNS routing and SSL/TLS certificates, ensuring reliable and secure access to the application.`,
     stack: [
