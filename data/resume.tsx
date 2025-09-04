@@ -40,15 +40,19 @@ import { BiLogoTypescript } from "react-icons/bi";
 
 export const about = {
   title: "About Me",
-  description: ` I'm a passionate Full Stack Developer with a decent background in web development. I have a proven track record of delivering high-quality, scalable, and efficient web applications. My expertise lies in building robust and responsive user interfaces using React, Next.js, and TypeScript. I always focus on building a well-structured codebase while striving to avoid redundancy, ensuring maintainability and scalability.`,
+  description: ` A DevOps enthusiast passionate about bridging the gap between development and operations. My mission is to
+enhance collaboration and streamline workflows through automation and innovative cloud solutions, Well-versed
+in CI/CD practices using GitHub Actions and Jenkins, and enjoy working with containerization tools like Docker
+and orchestration platforms such as Kubernetes (k8s), Hands-on experience with Git, GitHub, Python, Bash, and
+AWS empowers to create efficient and scalable solutions.`,
   info: [
     {
       name: "Name",
-      value: "Ali Hassan",
+      value: "Omar Tamer",
     },
     {
       name: "Phone",
-      value: "(+20) 100 062 7666",
+      value: "(+20) 155 521 5379",
     },
     {
       name: "Experince",
@@ -61,7 +65,7 @@ export const about = {
 
     {
       name: "Email",
-      value: "alghost2004@gmail.com",
+      value: "omartamerdev@gmail.com",
     },
     { name: "Freelance", value: "Availabile" },
     { name: "Language", value: "English, Arabic" },
@@ -113,48 +117,18 @@ export const education = {
       duration: "2022 - 2026",
       course: null,
     },
-    {
-      institution: "Cisco Networking Academy",
-      course: "CCNA: Switching, Routing, and Wireless Essentials",
-      duration: "2025",
-      gpa: null,
-      degree: null,
-    },
-    {
-      institution: "Cisco Networking Academy",
-      course: "CCNA: Introduction to Networks",
-      duration: "2024",
-      gpa: null,
-      degree: null,
-    },
-    {
-      institution: "Udemy",
-      course: "Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
-      level: "Beginner-Intermediate",
-      instructor: "Mohamed Naga",
-      duration: "2025",
-    },
-    {
-      institution: "Udemy",
-      course:
-        "Node.js: Internals, REST & GraphQL APIs, Performance, and Cloud Deployment",
-      level: "Advanced",
-      instructor: "Andrei Neagoie, Adam Odziemkowski",
-      duration: "2025",
-    },
-    {
-      institution: "Udemy",
-      course:
-        "Mastering Advanced Node.js: Event Loop, Redis Caching, File Uploads with AWS S3, and CI/CD Testing",
-      level: "Advanced",
-      instructor: "Stephen Grider",
-      duration: "2025",
-    },
+    // {
+    //   institution: "Manara",
+    //   course: "CCNA: Switching, Routing, and Wireless Essentials",
+    //   duration: "2025",
+    //   gpa: null,
+    //   degree: null,
+    // },
   ],
 };
 
 export const categorizedSkills = {
-  frontend: [
+  devops: [
     { icon: <FaHtml5 />, name: "HTML5" },
     { icon: <FaCss3Alt />, name: "CSS3" },
     { icon: <FaBootstrap />, name: "Bootstrap" },
@@ -195,5 +169,4 @@ export const categorizedSkills = {
     { icon: <SiGithubactions />, name: "GitHub Actions" },
     { icon: <SiPostman />, name: "Postman" },
   ],
-  testing: [{ icon: <SiJest />, name: "Jest" }],
 };
