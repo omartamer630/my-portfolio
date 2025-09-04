@@ -1,42 +1,31 @@
 import {
-  FaJsSquare,
-  FaHtml5,
-  FaBootstrap,
-  FaReact,
-  FaVuejs,
-  FaNodeJs,
-  FaCss3Alt,
-  FaLock,
+  FaJenkins,
   FaAws,
   FaGithub,
+  FaLinux,
+  FaPython,
+  FaJava,
 } from "react-icons/fa";
 
 import {
-  SiExpress,
-  SiMongodb,
   SiPostgresql,
   SiMysql,
-  SiTailwindcss,
-  SiRedux,
-  SiReactquery,
   SiPostman,
-  SiGraphql,
-  SiJest,
-  SiPm2,
-  SiPrisma,
-  SiSequelize,
-  SiTypeorm,
-  SiNextdotjs,
-  SiCloudflare,
-  SiCloudflareworkers,
   SiDocker,
   SiGithubactions,
-  SiTravisci,
-  SiSqlite,
+  SiGooglecloud,
+  SiCircleci,
 } from "react-icons/si";
-import { RiSupabaseFill } from "react-icons/ri";
 
-import { BiLogoTypescript } from "react-icons/bi";
+import { 
+  TbBrandTerraform,
+  TbBrandCpp 
+} from "react-icons/tb";
+
+import { VscTerminalBash } from "react-icons/vsc";
+
+import { AiOutlineKubernetes } from "react-icons/ai";
+
 
 export const about = {
   title: "About Me",
@@ -77,33 +66,18 @@ export const experince = {
   title: "My Experience",
   items: [
     {
-      company: "Prime Academy (Freelance)",
-      position: "Fullstack Developer",
-      duration: "Feb 2025 - Present",
+      company: "Digital Egypt Pioneers Initiative - DEPI",
+      position: "DevOps Intern",
+      duration: "Jul 2025 - Dec 2025",
       description:
-        "Built a modern E-learning platform with video support, interactive quizzes, chat, Cloudflare R2 uploads, and a full admin dashboard.",
+        "Gained hands-on experience with core DevOps practices, including containerization with Docker, CI/CD pipelines using Jenkins and GitHub Actions, infrastructure as code with Terraform, and cloud deployment on AWS. Worked on automation, monitoring with Prometheus, and collaborative projects applying real-world DevOps workflows.",
     },
     {
-      company: "Syntax Error (Freelance)",
-      position: "Full Stack Developer",
-      duration: "Oct 2024 - Jan 2025",
+      company: "Freelance",
+      position: "Cloud Engineer",
+      duration: "Feb 2025 - Mar 2025",
       description:
-        "Developed a full-stack web application using Next.js, Prisma, Redux, and JWT for authentication. Built a dynamic landing page, a course management system, an admin dashboard for course creation, and an interactive quiz system similar to Porsline. Utilized DaisyUI with Tailwind CSS for a clean and responsive UI.",
-    },
-    {
-      company: "CodeClause",
-      position: "Web Developer Intern",
-      duration: "Summer 2024",
-      description:
-        "Developed three responsive web applications, implementing backend functionality using Node.js, Express.js, and MongoDB. Integrated SQLite for lightweight data storage and utilized FilePond for efficient file uploads. Focused on creating dynamic and user-friendly experiences with JavaScript.",
-    },
-
-    {
-      company: "Freelance Project",
-      position: "Vue Frontend Developer",
-      duration: "Nov 2024 - Jan 2025",
-      description:
-        "Developing the frontend of an anime streaming platform, implementing features like anime browsing, search, and watchlists using Vue.js, Pinia, and Tailwind CSS for a seamless user experience.",
+        "Containerized and deployed a PHP application on AWS using Docker, implemented automated scripts for task scheduling, improving deployment consistency and reducing manual overhead.",
     },
   ],
 };
@@ -117,87 +91,36 @@ export const education = {
       duration: "2022 - 2026",
       course: null,
     },
-    {
-      institution: "Cisco Networking Academy",
-      course: "CCNA: Switching, Routing, and Wireless Essentials",
-      duration: "2025",
-      gpa: null,
-      degree: null,
-    },
-    {
-      institution: "Cisco Networking Academy",
-      course: "CCNA: Introduction to Networks",
-      duration: "2024",
-      gpa: null,
-      degree: null,
-    },
-    {
-      institution: "Udemy",
-      course: "Node.js,Express.js ,PostgreSQL, and Security [ARABIC]",
-      level: "Beginner-Intermediate",
-      instructor: "Mohamed Naga",
-      duration: "2025",
-    },
-    {
-      institution: "Udemy",
-      course:
-        "Node.js: Internals, REST & GraphQL APIs, Performance, and Cloud Deployment",
-      level: "Advanced",
-      instructor: "Andrei Neagoie, Adam Odziemkowski",
-      duration: "2025",
-    },
-    {
-      institution: "Udemy",
-      course:
-        "Mastering Advanced Node.js: Event Loop, Redis Caching, File Uploads with AWS S3, and CI/CD Testing",
-      level: "Advanced",
-      instructor: "Stephen Grider",
-      duration: "2025",
-    },
   ],
 };
 
 export const categorizedSkills = {
-  devops: [
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3Alt />, name: "CSS3" },
-    { icon: <FaBootstrap />, name: "Bootstrap" },
-    { icon: <SiTailwindcss />, name: "Tailwind" },
-    { icon: <FaJsSquare />, name: "JavaScript" },
-    { icon: <BiLogoTypescript />, name: "TypeScript" },
-    { icon: <FaReact />, name: "React" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <FaVuejs />, name: "Vue" },
-    { icon: <SiRedux />, name: "Redux" },
-    { icon: <SiReactquery />, name: "React Query" },
-  ],
-  backend: [
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <BiLogoTypescript />, name: "TypeScript" },
-    { icon: <SiExpress />, name: "Express.js" },
-    { icon: <SiGraphql />, name: "GraphQL" },
-    { icon: <FaLock />, name: "JWT" },
-    { icon: <SiPm2 />, name: "PM2" },
-    { icon: <SiPrisma />, name: "Prisma" },
-    { icon: <SiTypeorm />, name: "TypeORM" },
-    { icon: <SiSequelize />, name: "Sequelize" },
-  ],
-  database: [
-    { icon: <SiMongodb />, name: "MongoDB" },
+cloud: [
+  { icon: <FaAws />, name: "AWS" },
+  { icon: <SiGooglecloud /> , name: "GCP" },
+  { icon: <TbBrandTerraform />, name: "Terraform" },
+  { icon: <VscTerminalBash />, name: "Bash Script" },
+],
+devops: [
+  { icon: <FaLinux  />, name: "Linux" },
+  { icon: <SiDocker />, name: "Docker" },
+  { icon: <AiOutlineKubernetes />, name: "Kubernetes" },
+  { icon: <FaJenkins />, name: "Jenkins" },
+  { icon: <SiGithubactions />, name: "GitHub Actions" },
+  { icon: <SiCircleci  />, name: "CircleCI" },
+],
+language: [
+  { icon: <FaPython  />, name: "Python" },
+  { icon: <VscTerminalBash />, name: "Bash Script" },
+  { icon: <FaJava  />, name: "Java" },
+  { icon: <TbBrandCpp  />, name: "C/C++" },
+],
+database: [
     { icon: <SiPostgresql />, name: "PostgreSQL" },
     { icon: <SiMysql />, name: "MySQL" },
-    { icon: <SiSqlite />, name: "SQLite" },
   ],
-  tools: [
-    { icon: <RiSupabaseFill />, name: "Supabase" },
+tools: [
     { icon: <FaGithub />, name: "Github" },
-    { icon: <FaAws />, name: "AWS" },
-    { icon: <SiCloudflare />, name: "Cloudflare" },
-    { icon: <SiCloudflareworkers />, name: "Cloudflare Workers" },
-    { icon: <SiDocker />, name: "Docker" },
-    { icon: <SiTravisci />, name: "Travis CI" },
-    { icon: <SiGithubactions />, name: "GitHub Actions" },
     { icon: <SiPostman />, name: "Postman" },
   ],
-  testing: [{ icon: <SiJest />, name: "Jest" }],
 };
