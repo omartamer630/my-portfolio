@@ -11,7 +11,7 @@ import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import { links } from "@/constants/nav";
 import { personal } from "@/data/index";
-import { FaAnkh } from "react-icons/fa6";
+import { IoMdCloudOutline } from "react-icons/io";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ const MobileNav = () => {
             <h1 className="flex items-center text-3xl font-semibold gap-1">
               {personal.firstName}
               <span className="text-accent text-3xl">
-                <FaAnkh />
+                <IoMdCloudOutline />
               </span>
             </h1>
           </Link>

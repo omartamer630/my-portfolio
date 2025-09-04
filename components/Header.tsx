@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Nav from "@/components/Nav";
 import MobileNav from "@/components/MobileNav";
-import { IoMdCloudUpload } from "react-icons/io";
+import { IoMdCloudOutline } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
           <h1 className="flex text-4xl font-semibold items-end gap-1">
             Omar
             <span className="text-accent text-3xl ">
-              <IoMdCloudUpload />
+              <IoMdCloudOutline />
             </span>
           </h1>
         </Link>
